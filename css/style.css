@@ -26,10 +26,6 @@
 		font-weight: normal;
 	}
 
-	h1,h2 {
-		text-transform: lowercase;
-	}
-
 	h2 {
 		font-size: 1.6em;
 		letter-spacing: -1px;
