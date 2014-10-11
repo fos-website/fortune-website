@@ -1,11 +1,10 @@
-Halcyonic 3.1 by HTML5 UP
+Minimaxing 3.1 by HTML5 UP
 html5up.net | @n33co
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
 
-A somewhat unusual but interesting responsive site template. I did this one to test out a 
-new pattern set I put together and I think it really came together well. As for use cases 
-it's kind of unspecific so hey, use it for whatever.
+The very first responsive site template I ever made on 5grid (now upgraded to skelJS).
+It's clean, minimal, and so generic you can use it for pretty much anything.
 
 Feedback, bug reports, and comments are not only welcome, but strongly encouraged :)
 
