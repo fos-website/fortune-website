@@ -22,6 +22,20 @@ html {
     background-image: url("img/black-angle.png");
     background-attachment: fixed;
 }
+
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;<span class="line">
+} 
+
+span.line {
+  display: inline-block;
+}
 </style>
 	
       </head>
@@ -74,9 +88,12 @@ html {
 			});
 		</script>-->
 		
-		<h1 style="color:white";>Fortune OS 
-		<br />
-		News</h1>
+		<h1 style="color:white";>
+			<span class="line">Fortune OS</span>
+			<span class="line">News</span>
+		</h1>
+		<p> <br> </p>
+		<hr>
 		
 <script type="text/javascript">
 $(document).ready(function () {
