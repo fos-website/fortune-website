@@ -1,80 +1,185 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Fortune OS -- Tools</title>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <!-- css -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="css/style.css" rel="stylesheet" media="screen">
-	<link href="color/default.css" rel="stylesheet" media="screen">
-	<script src="js/modernizr.custom.js"></script>
-      </head>
-  <body>
-	<div class="menu-area">
-			<div id="dl-menu" class="dl-menuwrapper">
-						<button class="dl-trigger">Open Menu</button>
-						<ul class="dl-menu">
-							<li>
-								<a href="../index.html">Home</a>
-							</li>
-							<li><a href="../downloads">Downloads</a></li>
-							<li>
-								<a href="#">Source</a>
-								<ul class="dl-submenu">
-									<li><a href="https://github.com/Fortune-OS" target="_blank">GitHub</a></li>
-									<li><a href="http://review.fortune-os.in">Gerrit</a></li>
-								</ul>
-							</li>
-							<li><a href="../news/">News</a></li>
-							<li><a href="#"><strong>Tools</strong></a></li>
-							<li><a href="../team/">Team</a></li>
-							
-							<!-- Sub Menu Styling -->
-							<!--<li>
-								<a href="#">Sub Menu</a>
-								<ul class="dl-submenu">
-									<li><a href="#">Sub menu</a></li>
-									<li><a href="#">Sub menu</a></li>
-								</ul>
-							</li>-->
-							
-						</ul>
-					</div><!-- /dl-menuwrapper -->
-	</div>	
-	  <!-- Tools -->
-	  <section id="tools" class="home-section bg-white">
-		<div class="container">
-			  <div class="row">
-				  <div class="col-md-offset-2 col-md-8">
-					<div class="section-heading">
-					 <!--<h2>Tools</h2>-->
-					  <img src="img/tools-banner.png" alt="Fortune OS Tools" style="max-height:100%;max-width:100%">
-					</div>
-                </div>
-			  </div>			  
-		  </div>	
-		<p>Nothing here yet.</p>  
-	  </section>
-	  
-	<!--<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<p> </p>
-				</div>
-			</div>		
-		</div>	
-	</footer>
-	 
-	 <!-- js -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.smooth-scroll.min.js"></script>
-	<script src="js/jquery.dlmenu.js"></script>
-	<script src="js/wow.min.js"></script>
-	<script src="js/custom.js"></script>
+	<head>
+		<meta charset="utf-8">
+		<title>Fortune OS -- Tools</title>
+		        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/ripples.min.css" rel="stylesheet">
+        <link href="css/material-wfont.min.css" rel="stylesheet">
+        <link href="css/snackbar.min.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body{padding-top:50px}#banner{border-bottom:none}.page-header h1{font-size:4em}.bs-docs-section{margin-top:8em}.bs-component{position:relative}.bs-component .modal{position:relative;top:auto;right:auto;left:auto;bottom:auto;z-index:1;display:block}.bs-component .modal-dialog{width:90%}.bs-component .popover{position:relative;display:inline-block;width:220px;margin:20px}#source-button{position:absolute;top:0;right:0;z-index:100;font-weight:bold;padding: 5px 10px;}.progress{margin-bottom:10px}footer{margin:5em 0}footer li{float:left;margin-right:1.5em;margin-bottom:1.5em}footer p{clear:left;margin-bottom:0}.splash{padding:4em 0 0;background-color:#141d27;color:#fff;text-align:center}.splash h1{font-size:4em}.splash #social{margin:2em 0}.splash .alert{margin:2em 0}.section-tout{padding:4em 0 3em;border-bottom:1px solid rgba(0,0,0,0.05);background-color:#eaf1f1}.section-tout .fa{margin-right:.5em}.section-tout p{margin-bottom:3em}.section-preview{padding:4em 0 4em}.section-preview .preview{margin-bottom:4em;background-color:#eaf1f1}.section-preview .preview .image{position:relative}.section-preview .preview .image:before{box-shadow:inset 0 0 0 1px rgba(0,0,0,0.1);position:absolute;top:0;left:0;width:100%;height:100%;content:"";pointer-events:none}.section-preview .preview .options{padding:1em 2em 2em;border:1px solid rgba(0,0,0,0.05);border-top:none;text-align:center}.section-preview .preview .options p{margin-bottom:2em}.section-preview .dropdown-menu{text-align:left}.section-preview .lead{margin-bottom:2em}@media (max-width:767px){.section-preview .image img{width:100%}}.sponsor{text-align:center}.sponsor a:hover{text-decoration:none}@media (max-width:767px){#banner{margin-bottom:2em;text-align:center}}
+            .infobox .btn-sup { color: rgba(0,0,0,0.5); font-weight: bold; font-size: 15px; line-height: 30px; }
+            .infobox .btn-sup img { opacity: 0.5; height: 30px;}
+            .infobox .btn-sup span { padding-left: 10px; position: relative; top: 2px; }
+            .icons-material .row { margin-bottom: 20px; }
+            .icons-material .col-xs-2 { text-align: center; }
+            .icons-material i { font-size: 34pt; }
+
+            .icon-preview {
+                display: inline-block;
+                padding: 10px;
+                margin: 10px;
+                background: #D5D5D5;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+            .icon-preview span {
+                display: none;
+                position: absolute;
+                background: black;
+                color: #EEE;
+                padding: 5px 8px;
+                font-size: 15px;
+                font-family: Roboto;
+                border-radius: 2px;
+                z-index: 10;
+            }
+            .icon-preview:hover i { color: #4285f4; }
+            .icon-preview:hover span { display: block; cursor: text; }
+
+        </style>
+	</head>
+	<body>
 	
-	<link rel="shortcut icon" href="http://www.fortune-os.in/favicon.ico" type="image/icon"> <link rel="icon" href="http://www.fortune-os.in/favicon.ico" type="image/icon">
-  	
+	<!-- Nav bar -->
+	<div class="navbar navbar-default">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="javascript:void(0)">Brand</a>
+    </div>
+    <div class="navbar-collapse collapse navbar-responsive-collapse">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="javascript:void(0)">Active</a></li>
+            <li><a href="javascript:void(0)">Link</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="javascript:void(0)">Action</a></li>
+                    <li><a href="javascript:void(0)">Another action</a></li>
+                    <li><a href="javascript:void(0)">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Dropdown header</li>
+                    <li><a href="javascript:void(0)">Separated link</a></li>
+                    <li><a href="javascript:void(0)">One more separated link</a></li>
+                </ul>
+            </li>
+        </ul>
+        <form class="navbar-form navbar-left">
+            <input type="text" class="form-control col-lg-8" placeholder="Search">
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="javascript:void(0)">Link</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="javascript:void(0)">Action</a></li>
+                    <li><a href="javascript:void(0)">Another action</a></li>
+                    <li><a href="javascript:void(0)">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="javascript:void(0)">Separated link</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- end nav bar -->
+
+	
+	
+	
+	<!-- js -->
+	<script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            (function(){
+
+                var $button = $("<div id='source-button' class='btn btn-primary btn-xs'>&lt; &gt;</div>").click(function(){
+                    var index =  $('.bs-component').index( $(this).parent() );
+                    $.get(window.location.href, function(data){
+                        var html = $(data).find('.bs-component').eq(index).html();
+                        html = cleanSource(html);
+                        $("#source-modal pre").text(html);
+                        $("#source-modal").modal();
+                    })
+
+                });
+
+                $('.bs-component [data-toggle="popover"]').popover();
+                $('.bs-component [data-toggle="tooltip"]').tooltip();
+
+                $(".bs-component").hover(function(){
+                    $(this).append($button);
+                    $button.show();
+                }, function(){
+                    $button.hide();
+                });
+
+                function cleanSource(html) {
+                    var lines = html.split(/\n/);
+
+                    lines.shift();
+                    lines.splice(-1, 1);
+
+                    var indentSize = lines[0].length - lines[0].trim().length,
+                        re = new RegExp(" {" + indentSize + "}");
+
+                    lines = lines.map(function(line){
+                        if (line.match(re)) {
+                            line = line.substring(indentSize);
+                        }
+
+                        return line;
+                    });
+
+                    lines = lines.join("\n");
+
+                    return lines;
+                }
+
+                $(".icons-material .icon").each(function() {
+                    $(this).after("<br><br><code>" + $(this).attr("class").replace("icon ", "") + "</code>");
+                });
+
+            })();
+
+        </script>
+        <script src="js/ripples.min.js"></script>
+        <script src="js/material.min.js"></script>
+        <script src="js/snackbar.min.js"></script>
+
+
+        <script src="js/jquery.nouislider.min.js"></script>
+        <script>
+            $(function() {
+                $.material.init();
+                $(".shor").noUiSlider({
+                    start: 40,
+                    connect: "lower",
+                    range: {
+                        min: 0,
+                        max: 100
+                    }
+                });
+
+                $(".svert").noUiSlider({
+                    orientation: "vertical",
+                    start: 40,
+                    connect: "lower",
+                    range: {
+                        min: 0,
+                        max: 100
+                    }
+                });
+            });
+        </script>
+	<!-- end js -->
+	
+	
+	</body>
 </html>
