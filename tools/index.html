@@ -38,6 +38,79 @@
             }
             .icon-preview:hover i { color: #4285f4; }
             .icon-preview:hover span { display: block; cursor: text; }
+            
+            hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+/*  SECTIONS  ============================================================================= */
+
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  GROUPING  ============================================================================= */
+
+
+.group:before,
+.group:after {
+    content:"";
+    display:table;
+}
+.group:after {
+    clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+/*  GRID COLUMN SETUP   ==================================================================== */
+
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+
+.col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
+
+
+/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+}
+/*  GRID OF TWO   ============================================================================= */
+
+
+.span_2_of_2 {
+	width: 100%;
+}
+
+.span_1_of_2 {
+	width: 49.2%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.span_2_of_2 {
+		width: 100%; 
+	}
+	.span_1_of_2 {
+		width: 100%; 
+	}
+}
 
         </style>
 	</head>
@@ -90,9 +163,189 @@
 </div>
 <!-- end nav bar -->
 
+<!--Title-->
+<!--<p><h1 style="text-align:center">Tools</h1></p>
+<hr>
+<!--End Title-->
+
+<div class="section group" style="text-align:center;">
+	<h3>There are two columns, but they <i>are responsive</i>. If you are using a small screen, it will be one column on top of another.</h3>
+</div>
+
+<div class="section group" style="margin-left:20px;margin-right:20px;font-size:17px;">
+	<div class="col span_1_of_2">
+                        <h3 style="text-align:center;">Default buttons</h3>
+                        <p>
+                            <a href="javascript:void(0)" class="btn btn-default">Default</a>
+                            <a href="javascript:void(0)" class="btn btn-primary">Primary</a>
+                            <a href="javascript:void(0)" class="btn btn-success">Success</a>
+                            <a href="javascript:void(0)" class="btn btn-info">Info</a>
+                            <a href="javascript:void(0)" class="btn btn-warning">Warning</a>
+                            <a href="javascript:void(0)" class="btn btn-danger">Danger</a>
+                            <a href="javascript:void(0)" class="btn btn-link">Link</a>
+                        </p>
+                        <h3 style="text-align:center;">Flat buttons</h3>
+                        <p>
+                            <a href="javascript:void(0)" class="btn btn-flat btn-default">Default</a>
+                            <a href="javascript:void(0)" class="btn btn-flat btn-primary">Primary</a>
+                            <a href="javascript:void(0)" class="btn btn-flat btn-success">Success</a>
+                            <a href="javascript:void(0)" class="btn btn-flat btn-info">Info</a>
+                            <a href="javascript:void(0)" class="btn btn-flat btn-warning">Warning</a>
+                            <a href="javascript:void(0)" class="btn btn-flat btn-danger">Danger</a>
+                            <a href="javascript:void(0)" class="btn btn-flat btn-link">Link</a>
+                        </p>
+
+                        <h3 style="text-align:center;">Raised buttons</h3>
+                        <p>
+                            <a href="javascript:void(0)" class="btn btn-default btn-raised">Default</a>
+                            <a href="javascript:void(0)" class="btn btn-primary btn-raised">Primary</a>
+                            <a href="javascript:void(0)" class="btn btn-success btn-raised">Success</a>
+                            <a href="javascript:void(0)" class="btn btn-info btn-raised">Info</a>
+                            <a href="javascript:void(0)" class="btn btn-warning btn-raised">Warning</a>
+                            <a href="javascript:void(0)" class="btn btn-danger btn-raised">Danger</a>
+                        </p>
+
+                        <h3 style="text-align:center;">Disabled buttons</h3>
+                        <p>
+                            <a href="javascript:void(0)" class="btn btn-default disabled">Default</a>
+                            <a href="javascript:void(0)" class="btn btn-primary disabled">Primary</a>
+                            <a href="javascript:void(0)" class="btn btn-success disabled">Success</a>
+                            <a href="javascript:void(0)" class="btn btn-info disabled">Info</a>
+                            <a href="javascript:void(0)" class="btn btn-warning disabled">Warning</a>
+                            <a href="javascript:void(0)" class="btn btn-danger disabled">Danger</a>
+                            <a href="javascript:void(0)" class="btn btn-link disabled">Link</a>
+                        </p>
+
+                        <h3 style="text-align:center;">Button groups</h3>
+                        <div style="margin-bottom: 15px;">
+                            <div class="btn-toolbar" style="margin: 0;">
+                                <div class="btn-group">
+                                    <a href="javascript:void(0)" class="btn btn-default">Default</a>
+                                    <a href="javascript:void(0)" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="javascript:void(0)">Action</a></li>
+                                        <li><a href="javascript:void(0)">Another action</a></li>
+                                        <li><a href="javascript:void(0)">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="javascript:void(0)">Separated link</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="btn-group">
+                                    <a href="javascript:void(0)" class="btn btn-primary">Primary</a>
+                                    <a href="javascript:void(0)" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="javascript:void(0)">Action</a></li>
+                                        <li><a href="javascript:void(0)">Another action</a></li>
+                                        <li><a href="javascript:void(0)">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="javascript:void(0)">Separated link</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="btn-group">
+                                    <a href="javascript:void(0)" class="btn btn-success">Success</a>
+                                    <a href="javascript:void(0)" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="javascript:void(0)">Action</a></li>
+                                        <li><a href="javascript:void(0)">Another action</a></li>
+                                        <li><a href="javascript:void(0)">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="javascript:void(0)">Separated link</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="btn-group">
+                                    <a href="javascript:void(0)" class="btn btn-info">Info</a>
+                                    <a href="javascript:void(0)" class="btn btn-info dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="javascript:void(0)">Action</a></li>
+                                        <li><a href="javascript:void(0)">Another action</a></li>
+                                        <li><a href="javascript:void(0)">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="javascript:void(0)">Separated link</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="btn-group">
+                                    <a href="javascript:void(0)" class="btn btn-warning">Warning</a>
+                                    <a href="javascript:void(0)" class="btn btn-warning dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="javascript:void(0)">Action</a></li>
+                                        <li><a href="javascript:void(0)">Another action</a></li>
+                                        <li><a href="javascript:void(0)">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="javascript:void(0)">Separated link</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="btn-group">
+                                    <a href="javascript:void(0)" class="btn btn-danger">Danger</a>
+                                    <a href="javascript:void(0)" class="btn btn-danger dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="javascript:void(0)">Action</a></li>
+                                        <li><a href="javascript:void(0)">Another action</a></li>
+                                        <li><a href="javascript:void(0)">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="javascript:void(0)">Separated link</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 style="text-align:center;">Button sizes</h3>
+                        <p>
+                            <a href="javascript:void(0)" class="btn btn-primary btn-lg">Large button</a>
+                            <a href="javascript:void(0)" class="btn btn-primary">Default button</a>
+                            <a href="javascript:void(0)" class="btn btn-primary btn-sm">Small button</a>
+                            <a href="javascript:void(0)" class="btn btn-primary btn-xs">Mini button</a>
+                        </p>
+
+	</div>
+	<div class="col span_1_of_2">
+
+<a href="javascript:void(0)" class="btn btn-default btn-lg btn-block">Block level button</a>
+<div class="btn-toolbar">
+    <div class="btn-group">
+        <a href="javascript:void(0)" class="btn btn-default">1</a>
+        <a href="javascript:void(0)" class="btn btn-default">2</a>
+        <a href="javascript:void(0)" class="btn btn-default">3</a>
+        <a href="javascript:void(0)" class="btn btn-default">4</a>
+    </div>
+
+    <div class="btn-group">
+        <a href="javascript:void(0)" class="btn btn-default">5</a>
+        <a href="javascript:void(0)" class="btn btn-default">6</a>
+        <a href="javascript:void(0)" class="btn btn-default">7</a>
+    </div>
+
+    <div class="btn-group">
+        <a href="javascript:void(0)" class="btn btn-default">8</a>
+        <div class="btn-group">
+            <a href="javascript:void(0)" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                Dropdown
+                <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="javascript:void(0)">Dropdown link</a></li>
+                <li><a href="javascript:void(0)">Dropdown link</a></li>
+                <li><a href="javascript:void(0)">Dropdown link</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="btn-group-vertical">
+    <a href="javascript:void(0)" class="btn btn-default">Button</a>
+    <a href="javascript:void(0)" class="btn btn-default">Button</a>
+    <a href="javascript:void(0)" class="btn btn-default">Button</a>
+    <a href="javascript:void(0)" class="btn btn-default">Button</a>
+</div>
+
+
+	</div>
+</div>
 	
-	
-	
+
 	<!-- js -->
 	<script src="js/jquery-1.11.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
