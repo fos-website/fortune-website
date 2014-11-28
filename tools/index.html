@@ -3,116 +3,42 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Fortune OS -- Tools</title>
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/ripples.min.css" rel="stylesheet">
-        <link href="css/material-wfont.min.css" rel="stylesheet">
-        <link href="css/snackbar.min.css" rel="stylesheet">
+		<script src="../sub-files/js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+			$("body").css("display", "none");
+ 
+			$("body").fadeIn(1000);
+ 
+			$("a.transition").click(function(event){
+				event.preventDefault();
+				linkLocation = this.href;
+				$("body").fadeOut(750, redirectPage);      
+			});
+         
+			function redirectPage() {
+				window.location = linkLocation;
+			}
+		});
+		</script>
+		<link href="../sub-files/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../sub-files/css/ripples.min.css" rel="stylesheet">
+        <link href="../sub-files/css/material-wfont.min.css" rel="stylesheet">
+        <link href="../sub-files/css/snackbar.min.css" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
-            body{padding-top:50px}#banner{border-bottom:none}.page-header h1{font-size:4em}.bs-docs-section{margin-top:8em}.bs-component{position:relative}.bs-component .modal{position:relative;top:auto;right:auto;left:auto;bottom:auto;z-index:1;display:block}.bs-component .modal-dialog{width:90%}.bs-component .popover{position:relative;display:inline-block;width:220px;margin:20px}#source-button{position:absolute;top:0;right:0;z-index:100;font-weight:bold;padding: 5px 10px;}.progress{margin-bottom:10px}footer{margin:5em 0}footer li{float:left;margin-right:1.5em;margin-bottom:1.5em}footer p{clear:left;margin-bottom:0}.splash{padding:4em 0 0;background-color:#141d27;color:#fff;text-align:center}.splash h1{font-size:4em}.splash #social{margin:2em 0}.splash .alert{margin:2em 0}.section-tout{padding:4em 0 3em;border-bottom:1px solid rgba(0,0,0,0.05);background-color:#eaf1f1}.section-tout .fa{margin-right:.5em}.section-tout p{margin-bottom:3em}.section-preview{padding:4em 0 4em}.section-preview .preview{margin-bottom:4em;background-color:#eaf1f1}.section-preview .preview .image{position:relative}.section-preview .preview .image:before{box-shadow:inset 0 0 0 1px rgba(0,0,0,0.1);position:absolute;top:0;left:0;width:100%;height:100%;content:"";pointer-events:none}.section-preview .preview .options{padding:1em 2em 2em;border:1px solid rgba(0,0,0,0.05);border-top:none;text-align:center}.section-preview .preview .options p{margin-bottom:2em}.section-preview .dropdown-menu{text-align:left}.section-preview .lead{margin-bottom:2em}@media (max-width:767px){.section-preview .image img{width:100%}}.sponsor{text-align:center}.sponsor a:hover{text-decoration:none}@media (max-width:767px){#banner{margin-bottom:2em;text-align:center}}
-            .infobox .btn-sup { color: rgba(0,0,0,0.5); font-weight: bold; font-size: 15px; line-height: 30px; }
-            .infobox .btn-sup img { opacity: 0.5; height: 30px;}
-            .infobox .btn-sup span { padding-left: 10px; position: relative; top: 2px; }
-            .icons-material .row { margin-bottom: 20px; }
-            .icons-material .col-xs-2 { text-align: center; }
-            .icons-material i { font-size: 34pt; }
-
-            .icon-preview {
-                display: inline-block;
-                padding: 10px;
-                margin: 10px;
-                background: #D5D5D5;
-                border-radius: 3px;
-                cursor: pointer;
-            }
-            .icon-preview span {
-                display: none;
-                position: absolute;
-                background: black;
-                color: #EEE;
-                padding: 5px 8px;
-                font-size: 15px;
-                font-family: Roboto;
-                border-radius: 2px;
-                z-index: 10;
-            }
-            .icon-preview:hover i { color: #4285f4; }
-            .icon-preview:hover span { display: block; cursor: text; }
-            
-            hr { 
-    display: block;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: inset;
-    border-width: 1px;
-}
-
-/*  SECTIONS  ============================================================================= */
-
-.section {
-	clear: both;
-	padding: 0px;
-	margin: 0px;
-}
-
-/*  GROUPING  ============================================================================= */
-
-
-.group:before,
-.group:after {
-    content:"";
-    display:table;
-}
-.group:after {
-    clear:both;
-}
-.group {
-    zoom:1; /* For IE 6/7 (trigger hasLayout) */
-}
-
-/*  GRID COLUMN SETUP   ==================================================================== */
-
-.col {
-	display: block;
-	float:left;
-	margin: 1% 0 1% 1.6%;
-}
-
-.col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
-
-
-/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
-
-@media only screen and (max-width: 480px) {
-	.col { 
-		margin: 1% 0 1% 0%;
-	}
-}
-/*  GRID OF TWO   ============================================================================= */
-
-
-.span_2_of_2 {
-	width: 100%;
-}
-
-.span_1_of_2 {
-	width: 49.2%;
-}
-
-/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-
-@media only screen and (max-width: 480px) {
-	.span_2_of_2 {
-		width: 100%; 
-	}
-	.span_1_of_2 {
-		width: 100%; 
-	}
-}
-
-        </style>  
+		<link rel="stylesheet" type="text/css" href="../sub-files/css/grid/col.css"> 
+		<link rel="stylesheet" type="text/css" href="../sub-files/css/grid/2cols.css">
+		<link rel="stylesheet" type="text/css" href="../sub-files/css/grid/3cols.css">
+		<link rel="stylesheet" type="text/css" href="../sub-files/css/grid/4cols.css">
+		<link rel="stylesheet" type="text/css" href="../sub-files/css/grid/5cols.css">
+		<link rel="stylesheet" type="text/css" href="../sub-files/css/grid/6cols.css">
+		<link rel="stylesheet" type="text/css" href="../sub-files/css/grid/7cols.css">
+		<link rel="stylesheet" type="text/css" href="../sub-files/css/grid/8cols.css">
+		<link rel="stylesheet" type="text/css" href="../sub-files/css/grid/9cols.css">
+		<link rel="stylesheet" type="text/css" href="../sub-files/css/grid/10cols.css">
+		<link rel="stylesheet" type="text/css" href="../sub-files/css/grid/11cols.css">
+		<link rel="stylesheet" type="text/css" href="../sub-files/css/grid/12cols.css">
+		<link rel="stylesheet" type="text/css" href="../sub-files/css/style.css">
     </head>
 	<body>
     <!-- ALERT -->
@@ -132,293 +58,91 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="javascript:void(0)">Brand</a>
+        <a class="navbar-brand" href="../index.html" class="transition">Fortune OS</a>
     </div>
     <div class="navbar-collapse collapse navbar-responsive-collapse">
-        <ul class="nav navbar-nav">
-            <li class="active"><a href="javascript:void(0)"><b>Active</b></a></li>
-            <li><a href="javascript:void(0)">Link</a></li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                    <li><a href="javascript:void(0)">Action</a></li>
-                    <li><a href="javascript:void(0)">Another action</a></li>
-                    <li><a href="javascript:void(0)">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li class="dropdown-header">Dropdown header</li>
-                    <li><a href="javascript:void(0)">Separated link</a></li>
-                    <li><a href="javascript:void(0)">One more separated link</a></li>
-                </ul>
-            </li>
-        </ul>
-        <form class="navbar-form navbar-left">
-            <input type="text" class="form-control col-lg-8" placeholder="Search">
-        </form>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="javascript:void(0)">Link</a></li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+			<li><a href="../index.html" class="transition">Home</a></li>
+			<li><a href="../downloads" class="transition">Downloads</a></li>
+			<li class="dropdown">
+                <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Source<b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                    <li><a href="javascript:void(0)">Action</a></li>
-                    <li><a href="javascript:void(0)">Another action</a></li>
-                    <li><a href="javascript:void(0)">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li><a href="javascript:void(0)">Separated link</a></li>
+                    <li><a href="https://github.com/Fortune-OS" class="transition" target="_blank">GitHub</a></li>
+                    <li><a href="http://review.fortune-os.in/" class="transition" target="_blank">Gerrit</a></li>
                 </ul>
             </li>
+            <li><a href="../news" class="transition">News</a></li>
+            <li class="active"><a href="javascript:void(0)"><b>Tools</b></a></li>
+            <li><a href="../team" class="transition">Team</a></li>
         </ul>
     </div>
 </div>
 <!-- end nav bar -->
 
+
+
 <!--Title-->
-<!--<p><h1 style="text-align:center">Tools</h1></p>
+<p><h1 style="text-align:center">Tools</h1></p>
 <hr>
 <!--End Title-->
 
+
+
 <div class="section group" style="text-align:center;">
-	<h3 style="margin-left:10px;margin-right:10px;">There are two columns in this section, but they <i>are responsive</i>. If you are using a small screen, it will be one column on top of another.</h3>
-</div>
-
-<div class="section group" style="margin-left:20px;margin-right:20px;font-size:17px;">
-	<div class="col span_1_of_2" style="text-align:center;">
-                        <h3 style="text-align:center;">Default buttons</h3>
-                        <p>
-                            <a href="javascript:void(0)" class="btn btn-default">Default</a>
-                            <a href="javascript:void(0)" class="btn btn-primary">Primary</a>
-                            <a href="javascript:void(0)" class="btn btn-success">Success</a>
-                            <a href="javascript:void(0)" class="btn btn-info">Info</a>
-                            <a href="javascript:void(0)" class="btn btn-warning">Warning</a>
-                            <a href="javascript:void(0)" class="btn btn-danger">Danger</a>
-                            <a href="javascript:void(0)" class="btn btn-link">Link</a>
-                        </p>
-                        <h3 style="text-align:center;">Flat buttons</h3>
-                        <p>
-                            <a href="javascript:void(0)" class="btn btn-flat btn-default">Default</a>
-                            <a href="javascript:void(0)" class="btn btn-flat btn-primary">Primary</a>
-                            <a href="javascript:void(0)" class="btn btn-flat btn-success">Success</a>
-                            <a href="javascript:void(0)" class="btn btn-flat btn-info">Info</a>
-                            <a href="javascript:void(0)" class="btn btn-flat btn-warning">Warning</a>
-                            <a href="javascript:void(0)" class="btn btn-flat btn-danger">Danger</a>
-                            <a href="javascript:void(0)" class="btn btn-flat btn-link">Link</a>
-                        </p>
-
-                        <h3 style="text-align:center;">Raised buttons</h3>
-                        <p>
-                            <a href="javascript:void(0)" class="btn btn-default btn-raised">Default</a>
-                            <a href="javascript:void(0)" class="btn btn-primary btn-raised">Primary</a>
-                            <a href="javascript:void(0)" class="btn btn-success btn-raised">Success</a>
-                            <a href="javascript:void(0)" class="btn btn-info btn-raised">Info</a>
-                            <a href="javascript:void(0)" class="btn btn-warning btn-raised">Warning</a>
-                            <a href="javascript:void(0)" class="btn btn-danger btn-raised">Danger</a>
-                        </p>
-
-                        <h3 style="text-align:center;">Disabled buttons</h3>
-                        <p>
-                            <a href="javascript:void(0)" class="btn btn-default disabled">Default</a>
-                            <a href="javascript:void(0)" class="btn btn-primary disabled">Primary</a>
-                            <a href="javascript:void(0)" class="btn btn-success disabled">Success</a>
-                            <a href="javascript:void(0)" class="btn btn-info disabled">Info</a>
-                            <a href="javascript:void(0)" class="btn btn-warning disabled">Warning</a>
-                            <a href="javascript:void(0)" class="btn btn-danger disabled">Danger</a>
-                            <a href="javascript:void(0)" class="btn btn-link disabled">Link</a>
-                        </p>
-
-                        <h3 style="text-align:center;">Button groups</h3>
-                        <div style="margin-bottom: 15px;">
-                            <div class="btn-toolbar" style="margin: 0;">
-                                <div class="btn-group">
-                                    <a href="javascript:void(0)" class="btn btn-default">Default</a>
-                                    <a href="javascript:void(0)" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="javascript:void(0)">Action</a></li>
-                                        <li><a href="javascript:void(0)">Another action</a></li>
-                                        <li><a href="javascript:void(0)">Something else here</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="javascript:void(0)">Separated link</a></li>
-                                    </ul>
-                                </div>
-
-                                <div class="btn-group">
-                                    <a href="javascript:void(0)" class="btn btn-primary">Primary</a>
-                                    <a href="javascript:void(0)" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="javascript:void(0)">Action</a></li>
-                                        <li><a href="javascript:void(0)">Another action</a></li>
-                                        <li><a href="javascript:void(0)">Something else here</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="javascript:void(0)">Separated link</a></li>
-                                    </ul>
-                                </div>
-
-                                <div class="btn-group">
-                                    <a href="javascript:void(0)" class="btn btn-success">Success</a>
-                                    <a href="javascript:void(0)" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="javascript:void(0)">Action</a></li>
-                                        <li><a href="javascript:void(0)">Another action</a></li>
-                                        <li><a href="javascript:void(0)">Something else here</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="javascript:void(0)">Separated link</a></li>
-                                    </ul>
-                                </div>
-
-                                <div class="btn-group">
-                                    <a href="javascript:void(0)" class="btn btn-info">Info</a>
-                                    <a href="javascript:void(0)" class="btn btn-info dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="javascript:void(0)">Action</a></li>
-                                        <li><a href="javascript:void(0)">Another action</a></li>
-                                        <li><a href="javascript:void(0)">Something else here</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="javascript:void(0)">Separated link</a></li>
-                                    </ul>
-                                </div>
-
-                                <div class="btn-group">
-                                    <a href="javascript:void(0)" class="btn btn-warning">Warning</a>
-                                    <a href="javascript:void(0)" class="btn btn-warning dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="javascript:void(0)">Action</a></li>
-                                        <li><a href="javascript:void(0)">Another action</a></li>
-                                        <li><a href="javascript:void(0)">Something else here</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="javascript:void(0)">Separated link</a></li>
-                                    </ul>
-                                </div>
-
-                                <div class="btn-group">
-                                    <a href="javascript:void(0)" class="btn btn-danger">Danger</a>
-                                    <a href="javascript:void(0)" class="btn btn-danger dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="javascript:void(0)">Action</a></li>
-                                        <li><a href="javascript:void(0)">Another action</a></li>
-                                        <li><a href="javascript:void(0)">Something else here</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="javascript:void(0)">Separated link</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <h3 style="text-align:center;">Button sizes</h3>
-                        <p>
-                            <a href="javascript:void(0)" class="btn btn-primary btn-lg">Large button</a>
-                            <a href="javascript:void(0)" class="btn btn-primary">Default button</a>
-                            <a href="javascript:void(0)" class="btn btn-primary btn-sm">Small button</a>
-                            <a href="javascript:void(0)" class="btn btn-primary btn-xs">Mini button</a>
-                        </p>
-
+	
+	<!-- Column 1 -->
+	<div class="col span_1_of_8">
+	Column1
 	</div>
+	<!-- End Col 1 -->
 	
-	
-	
-	<div class="col span_1_of_2">
-
-<a href="javascript:void(0)" class="btn btn-default btn-lg btn-block">Block level button</a>
-<div class="btn-toolbar">
-    <div class="btn-group">
-        <a href="javascript:void(0)" class="btn btn-default">1</a>
-        <a href="javascript:void(0)" class="btn btn-default">2</a>
-        <a href="javascript:void(0)" class="btn btn-default">3</a>
-        <a href="javascript:void(0)" class="btn btn-default">4</a>
-    </div>
-
-    <div class="btn-group">
-        <a href="javascript:void(0)" class="btn btn-default">5</a>
-        <a href="javascript:void(0)" class="btn btn-default">6</a>
-        <a href="javascript:void(0)" class="btn btn-default">7</a>
-    </div>
-
-    <div class="btn-group">
-        <a href="javascript:void(0)" class="btn btn-default">8</a>
-        <div class="btn-group">
-            <a href="javascript:void(0)" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                Dropdown
-                <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu">
-                <li><a href="javascript:void(0)">Dropdown link</a></li>
-                <li><a href="javascript:void(0)">Dropdown link</a></li>
-                <li><a href="javascript:void(0)">Dropdown link</a></li>
-            </ul>
-        </div>
-    </div>
-</div>
-<div class="btn-group-vertical">
-    <a href="javascript:void(0)" class="btn btn-default">Button</a>
-    <a href="javascript:void(0)" class="btn btn-default">Button</a>
-    <a href="javascript:void(0)" class="btn btn-default">Button</a>
-    <a href="javascript:void(0)" class="btn btn-default">Button</a>
-</div>
-<br><br><hr><br>
-<h4 style="text-align:center;">You can have as few as 1 column or as many as 12!</h4>
-
+	<!-- Column 2 -->
+	<div class="col span_1_of_8">
+	Column2
 	</div>
-</div>
-<hr>
-<h3 style="text-align:center;">You can have tables, too! (notice how there is only 1 column now)</h3>
-<table class="table table-striped table-hover ">
-    <thead>
-        <tr>
-            <th>#</th>
-            <th>Column heading</th>
-            <th>Column heading</th>
-            <th>Column heading</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>1</td>
-            <td>Column content</td>
-            <td>Column content</td>
-            <td>Column content</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Column content</td>
-            <td>Column content</td>
-            <td>Column content</td>
-        </tr>
-        <tr class="info">
-            <td>3</td>
-            <td>Column content</td>
-            <td>Column content</td>
-            <td>Column content</td>
-        </tr>
-        <tr class="success">
-            <td>4</td>
-            <td>Column content</td>
-            <td>Column content</td>
-            <td>Column content</td>
-        </tr>
-        <tr class="danger">
-            <td>5</td>
-            <td>Column content</td>
-            <td>Column content</td>
-            <td>Column content</td>
-        </tr>
-        <tr class="warning">
-            <td>6</td>
-            <td>Column content</td>
-            <td>Column content</td>
-            <td>Column content</td>
-        </tr>
-        <tr class="active">
-            <td>7</td>
-            <td>Column content</td>
-            <td>Column content</td>
-            <td>Column content</td>
-        </tr>
-    </tbody>
-</table>
-<hr>
-
+	<!-- End Col 2 -->
 	
+	<!-- Column 3 -->
+	<div class="col span_1_of_8">
+	Column3
+	</div>
+	<!-- End Col 3 -->
+	
+	<!-- Column 4 -->
+	<div class="col span_1_of_8">
+	Column4
+	</div>
+	<!-- End Col 4 -->
+	
+	<!-- Column 5 -->
+	<div class="col span_1_of_8">
+	Column5
+	</div>
+	<!-- End Col 5 -->
+	
+	<!-- Column 6 -->
+	<div class="col span_1_of_8">
+	Column6
+	</div>
+	<!-- End Col 6 -->
+	
+	<!-- Column 7 -->
+	<div class="col span_1_of_8">
+	Column7
+	</div>
+	<!-- End Col 7 -->
+	
+	<!-- Column 8 -->
+	<div class="col span_1_of_8">
+	Column8
+	</div>
+	<!-- End Col 8 -->
+	
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 	<!-- js -->
-	<script src="js/jquery-1.11.1.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        <script src="../sub-files/js/bootstrap.min.js"></script>
         <script>
             (function(){
 
@@ -472,12 +196,12 @@
             })();
 
         </script>
-        <script src="js/ripples.min.js"></script>
-        <script src="js/material.min.js"></script>
-        <script src="js/snackbar.min.js"></script>
+        <script src="../sub-files/js/ripples.min.js"></script>
+        <script src="../sub-files/js/material.min.js"></script>
+        <script src="../sub-files/js/snackbar.min.js"></script>
 
 
-        <script src="js/jquery.nouislider.min.js"></script>
+        <script src="../sub-files/js/jquery.nouislider.min.js"></script>
         <script>
             $(function() {
                 $.material.init();
@@ -505,6 +229,6 @@
 	
 	
 	</body>
-	<footer style="font-size:xx-small;text-align:center;color:white;background-color:#4D4C4C;">This page's theme was inspired by Google's Material Design. The responsive grid was created using the <u style="color:#AFB4FF;background-color:transparent;"><a href ="http://www.responsivegridsystem.com/" style="color:#AFB4FF;background-color:transparent;">Responsive Grid System</a>.
+	<footer style="font-size:xx-small;text-align:center;color:white;background-color:#4D4C4C;">The responsive grid on this web page was created using the <u style="color:#AFB4FF;background-color:transparent;"><a href ="http://www.responsivegridsystem.com/" style="color:#AFB4FF;background-color:transparent;">Responsive Grid System</a>.
 	</footer>
 </html>

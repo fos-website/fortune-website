@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Fortune OS -- demo</title>
+		<link href="../sub-files/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../sub-files/css/ripples.min.css" rel="stylesheet">
+        <link href="../sub-files/css/material-wfont.min.css" rel="stylesheet">
+        <link href="../sub-files/css/snackbar.min.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="../sub-files/css/grid/col.css"> 
+		<link rel="stylesheet" type="text/css" href="../sub-files/css/grid/2cols.css">
+		<link rel="stylesheet" type="text/css" href="../sub-files/css/grid/3cols.css">
+		<link rel="stylesheet" type="text/css" href="../sub-files/css/grid/4cols.css">
+		<link rel="stylesheet" type="text/css" href="../sub-files/css/grid/5cols.css">
+		<link rel="stylesheet" type="text/css" href="../sub-files/css/grid/6cols.css">
+		<link rel="stylesheet" type="text/css" href="../sub-files/css/grid/7cols.css">
+		<link rel="stylesheet" type="text/css" href="../sub-files/css/grid/8cols.css">
+		<link rel="stylesheet" type="text/css" href="../sub-files/css/grid/9cols.css">
+		<link rel="stylesheet" type="text/css" href="../sub-files/css/grid/10cols.css">
+		<link rel="stylesheet" type="text/css" href="../sub-files/css/grid/11cols.css">
+		<link rel="stylesheet" type="text/css" href="../sub-files/css/grid/12cols.css">
+    </head>
+	<body>
+    <!-- ALERT -->
+	
+	<!-- <div class="alert alert-dismissable alert-warning">
+    <button type="button" class="close" data-dismiss="alert" style="color:black;">×</button>
+    <h4><b>Alert!</b></h4>
+    <p>This is a <i>test alert</i>. Nothing important. But here is a <u style="color:blue;background-color:transparent;"><a href="http://google.com" target="_blank" style="color:blue;background-color:transparent;">link to Google</a></u> in case you forgot.</p>
+	</div>
+	<!-- End ALERT -->
+	
+	<!-- Nav bar ===== Change bg color by adding [CLASS]-material-[COLOR] after the [CLASS] ==== Acceptable colors: http://tinyurl.com/materialcolors -->
+	<div class="navbar navbar-default">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">Fortune OS</a>
+    </div>
+    <div class="navbar-collapse collapse navbar-responsive-collapse">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="javascript:void(0)"><b>Active</b></a></li>
+            <li><a href="javascript:void(0)">Link</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="javascript:void(0)">Action</a></li>
+                    <li><a href="javascript:void(0)">Another action</a></li>
+                    <li><a href="javascript:void(0)">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Dropdown header</li>
+                    <li><a href="javascript:void(0)">Separated link</a></li>
+                    <li><a href="javascript:void(0)">One more separated link</a></li>
+                </ul>
+            </li>
+        </ul>
+        <form class="navbar-form navbar-left">
+            <input type="text" class="form-control col-lg-8" placeholder="Search">
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="javascript:void(0)">Link</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="javascript:void(0)">Action</a></li>
+                    <li><a href="javascript:void(0)">Another action</a></li>
+                    <li><a href="javascript:void(0)">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="javascript:void(0)">Separated link</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- end nav bar -->
+
+<!--Title-->
+<!--<p><h1 style="text-align:center">Tools</h1></p>
+<hr>
+<!--End Title-->
+
+<div class="section group" style="text-align:center;">
+	<h3 style="margin-left:10px;margin-right:10px;">There are two columns in this section, but they <i>are responsive</i>. If you are using a small screen, it will be one column on top of another.</h3>
+</div>
+
+<div class="section group" style="margin-left:20px;margin-right:20px;font-size:17px;">
+	<div class="col span_1_of_2" style="text-align:center;">
+                        <h3 style="text-align:center;">Default buttons</h3>
+                        <p>
+                            <a href="javascript:void(0)" class="btn btn-default">Default</a>
+                            <a href="javascript:void(0)" class="btn btn-primary">Primary</a>
+                            <a href="javascript:void(0)" class="btn btn-success">Success</a>
+                            <a href="javascript:void(0)" class="btn btn-info">Info</a>
+                            <a href="javascript:void(0)" class="btn btn-warning">Warning</a>
+                            <a href="javascript:void(0)" class="btn btn-danger">Danger</a>
+                            <a href="javascript:void(0)" class="btn btn-link">Link</a>
+                        </p>
+                        <h3 style="text-align:center;">Flat buttons</h3>
+                        <p>
+                            <a href="javascript:void(0)" class="btn btn-flat btn-default">Default</a>
+                            <a href="javascript:void(0)" class="btn btn-flat btn-primary">Primary</a>
+                            <a href="javascript:void(0)" class="btn btn-flat btn-success">Success</a>
+                            <a href="javascript:void(0)" class="btn btn-flat btn-info">Info</a>
+                            <a href="javascript:void(0)" class="btn btn-flat btn-warning">Warning</a>
+                            <a href="javascript:void(0)" class="btn btn-flat btn-danger">Danger</a>
+                            <a href="javascript:void(0)" class="btn btn-flat btn-link">Link</a>
+                        </p>
+
+                        <h3 style="text-align:center;">Raised buttons</h3>
+                        <p>
+                            <a href="javascript:void(0)" class="btn btn-default btn-raised">Default</a>
+                            <a href="javascript:void(0)" class="btn btn-primary btn-raised">Primary</a>
+                            <a href="javascript:void(0)" class="btn btn-success btn-raised">Success</a>
+                            <a href="javascript:void(0)" class="btn btn-info btn-raised">Info</a>
+                            <a href="javascript:void(0)" class="btn btn-warning btn-raised">Warning</a>
+                            <a href="javascript:void(0)" class="btn btn-danger btn-raised">Danger</a>
+                        </p>
+
+                        <h3 style="text-align:center;">Disabled buttons</h3>
+                        <p>
+                            <a href="javascript:void(0)" class="btn btn-default disabled">Default</a>
+                            <a href="javascript:void(0)" class="btn btn-primary disabled">Primary</a>
+                            <a href="javascript:void(0)" class="btn btn-success disabled">Success</a>
+                            <a href="javascript:void(0)" class="btn btn-info disabled">Info</a>
+                            <a href="javascript:void(0)" class="btn btn-warning disabled">Warning</a>
+                            <a href="javascript:void(0)" class="btn btn-danger disabled">Danger</a>
+                            <a href="javascript:void(0)" class="btn btn-link disabled">Link</a>
+                        </p>
+
+                        <h3 style="text-align:center;">Button groups</h3>
+                        <div style="margin-bottom: 15px;">
+                            <div class="btn-toolbar" style="margin: 0;">
+                                <div class="btn-group">
+                                    <a href="javascript:void(0)" class="btn btn-default">Default</a>
+                                    <a href="javascript:void(0)" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="javascript:void(0)">Action</a></li>
+                                        <li><a href="javascript:void(0)">Another action</a></li>
+                                        <li><a href="javascript:void(0)">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="javascript:void(0)">Separated link</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="btn-group">
+                                    <a href="javascript:void(0)" class="btn btn-primary">Primary</a>
+                                    <a href="javascript:void(0)" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="javascript:void(0)">Action</a></li>
+                                        <li><a href="javascript:void(0)">Another action</a></li>
+                                        <li><a href="javascript:void(0)">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="javascript:void(0)">Separated link</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="btn-group">
+                                    <a href="javascript:void(0)" class="btn btn-success">Success</a>
+                                    <a href="javascript:void(0)" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="javascript:void(0)">Action</a></li>
+                                        <li><a href="javascript:void(0)">Another action</a></li>
+                                        <li><a href="javascript:void(0)">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="javascript:void(0)">Separated link</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="btn-group">
+                                    <a href="javascript:void(0)" class="btn btn-info">Info</a>
+                                    <a href="javascript:void(0)" class="btn btn-info dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="javascript:void(0)">Action</a></li>
+                                        <li><a href="javascript:void(0)">Another action</a></li>
+                                        <li><a href="javascript:void(0)">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="javascript:void(0)">Separated link</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="btn-group">
+                                    <a href="javascript:void(0)" class="btn btn-warning">Warning</a>
+                                    <a href="javascript:void(0)" class="btn btn-warning dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="javascript:void(0)">Action</a></li>
+                                        <li><a href="javascript:void(0)">Another action</a></li>
+                                        <li><a href="javascript:void(0)">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="javascript:void(0)">Separated link</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="btn-group">
+                                    <a href="javascript:void(0)" class="btn btn-danger">Danger</a>
+                                    <a href="javascript:void(0)" class="btn btn-danger dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="javascript:void(0)">Action</a></li>
+                                        <li><a href="javascript:void(0)">Another action</a></li>
+                                        <li><a href="javascript:void(0)">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="javascript:void(0)">Separated link</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 style="text-align:center;">Button sizes</h3>
+                        <p>
+                            <a href="javascript:void(0)" class="btn btn-primary btn-lg">Large button</a>
+                            <a href="javascript:void(0)" class="btn btn-primary">Default button</a>
+                            <a href="javascript:void(0)" class="btn btn-primary btn-sm">Small button</a>
+                            <a href="javascript:void(0)" class="btn btn-primary btn-xs">Mini button</a>
+                        </p>
+
+	</div>
+	
+	
+	
+	<div class="col span_1_of_2">
+
+<a href="javascript:void(0)" class="btn btn-default btn-lg btn-block">Block level button</a>
+<div class="btn-toolbar">
+    <div class="btn-group">
+        <a href="javascript:void(0)" class="btn btn-default">1</a>
+        <a href="javascript:void(0)" class="btn btn-default">2</a>
+        <a href="javascript:void(0)" class="btn btn-default">3</a>
+        <a href="javascript:void(0)" class="btn btn-default">4</a>
+    </div>
+
+    <div class="btn-group">
+        <a href="javascript:void(0)" class="btn btn-default">5</a>
+        <a href="javascript:void(0)" class="btn btn-default">6</a>
+        <a href="javascript:void(0)" class="btn btn-default">7</a>
+    </div>
+
+    <div class="btn-group">
+        <a href="javascript:void(0)" class="btn btn-default">8</a>
+        <div class="btn-group">
+            <a href="javascript:void(0)" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                Dropdown
+                <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="javascript:void(0)">Dropdown link</a></li>
+                <li><a href="javascript:void(0)">Dropdown link</a></li>
+                <li><a href="javascript:void(0)">Dropdown link</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="btn-group-vertical">
+    <a href="javascript:void(0)" class="btn btn-default">Button</a>
+    <a href="javascript:void(0)" class="btn btn-default">Button</a>
+    <a href="javascript:void(0)" class="btn btn-default">Button</a>
+    <a href="javascript:void(0)" class="btn btn-default">Button</a>
+</div>
+<br><br><hr><br>
+<h4 style="text-align:center;">You can have as few as 1 column or as many as 12!</h4>
+
+	</div>
+</div>
+<hr>
+<h3 style="text-align:center;">You can have tables, too! (notice how there is only 1 column now)</h3>
+<table class="table table-striped table-hover ">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Column heading</th>
+            <th>Column heading</th>
+            <th>Column heading</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Column content</td>
+            <td>Column content</td>
+            <td>Column content</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Column content</td>
+            <td>Column content</td>
+            <td>Column content</td>
+        </tr>
+        <tr class="info">
+            <td>3</td>
+            <td>Column content</td>
+            <td>Column content</td>
+            <td>Column content</td>
+        </tr>
+        <tr class="success">
+            <td>4</td>
+            <td>Column content</td>
+            <td>Column content</td>
+            <td>Column content</td>
+        </tr>
+        <tr class="danger">
+            <td>5</td>
+            <td>Column content</td>
+            <td>Column content</td>
+            <td>Column content</td>
+        </tr>
+        <tr class="warning">
+            <td>6</td>
+            <td>Column content</td>
+            <td>Column content</td>
+            <td>Column content</td>
+        </tr>
+        <tr class="active">
+            <td>7</td>
+            <td>Column content</td>
+            <td>Column content</td>
+            <td>Column content</td>
+        </tr>
+    </tbody>
+</table>
+<hr>
+
+	
+
+	<!-- js -->
+	<script src="../sub-files/js/jquery-1.11.1.min.js"></script>
+        <script src="../sub-pages/js/bootstrap.min.js"></script>
+        <script>
+            (function(){
+
+                var $button = $("<div id='source-button' class='btn btn-primary btn-xs'>&lt; &gt;</div>").click(function(){
+                    var index =  $('.bs-component').index( $(this).parent() );
+                    $.get(window.location.href, function(data){
+                        var html = $(data).find('.bs-component').eq(index).html();
+                        html = cleanSource(html);
+                        $("#source-modal pre").text(html);
+                        $("#source-modal").modal();
+                    })
+
+                });
+
+                $('.bs-component [data-toggle="popover"]').popover();
+                $('.bs-component [data-toggle="tooltip"]').tooltip();
+
+                $(".bs-component").hover(function(){
+                    $(this).append($button);
+                    $button.show();
+                }, function(){
+                    $button.hide();
+                });
+
+                function cleanSource(html) {
+                    var lines = html.split(/\n/);
+
+                    lines.shift();
+                    lines.splice(-1, 1);
+
+                    var indentSize = lines[0].length - lines[0].trim().length,
+                        re = new RegExp(" {" + indentSize + "}");
+
+                    lines = lines.map(function(line){
+                        if (line.match(re)) {
+                            line = line.substring(indentSize);
+                        }
+
+                        return line;
+                    });
+
+                    lines = lines.join("\n");
+
+                    return lines;
+                }
+
+                $(".icons-material .icon").each(function() {
+                    $(this).after("<br><br><code>" + $(this).attr("class").replace("icon ", "") + "</code>");
+                });
+
+            })();
+
+        </script>
+        <script src="../sub-files/js/ripples.min.js"></script>
+        <script src="../sub-files/js/material.min.js"></script>
+        <script src="../sub-files/js/snackbar.min.js"></script>
+
+
+        <script src="../sub-files/js/jquery.nouislider.min.js"></script>
+        <script>
+            $(function() {
+                $.material.init();
+                $(".shor").noUiSlider({
+                    start: 40,
+                    connect: "lower",
+                    range: {
+                        min: 0,
+                        max: 100
+                    }
+                });
+
+                $(".svert").noUiSlider({
+                    orientation: "vertical",
+                    start: 40,
+                    connect: "lower",
+                    range: {
+                        min: 0,
+                        max: 100
+                    }
+                });
+            });
+        </script>
+	<!-- end js -->
+	
+	
+	</body>
+	<footer style="font-size:xx-small;text-align:center;color:white;background-color:#4D4C4C;">This page's theme was inspired by Google's Material Design. The responsive grid was created using the <u style="color:#AFB4FF;background-color:transparent;"><a href ="http://www.responsivegridsystem.com/" style="color:#AFB4FF;background-color:transparent;">Responsive Grid System</a>.
+	</footer>
+</html>
