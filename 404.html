@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Fortune OS -- 404 ERROR</title>
+		<script src="sub-files/js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+			$("body").css("display", "none");
+ 
+			$("body").fadeIn(1000);
+ 
+			$("a.transition").click(function(event){
+				event.preventDefault();
+				linkLocation = this.href;
+				$("body").fadeOut(750, redirectPage);      
+			});
+         
+			function redirectPage() {
+				window.location = linkLocation;
+			}
+		});
+		</script>
+		<link href="sub-files/css/bootstrap.min.css" rel="stylesheet">
+        <link href="sub-files/css/ripples.min.css" rel="stylesheet">
+        <link href="sub-files/css/material-wfont.min.css" rel="stylesheet">
+        <link href="sub-files/css/snackbar.min.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="sub-files/css/grid/col.css"> 
+		<link rel="stylesheet" type="text/css" href="sub-files/css/grid/2cols.css">
+		<link rel="stylesheet" type="text/css" href="sub-files/css/grid/3cols.css">
+		<link rel="stylesheet" type="text/css" href="sub-files/css/grid/4cols.css">
+		<link rel="stylesheet" type="text/css" href="sub-files/css/grid/5cols.css">
+		<link rel="stylesheet" type="text/css" href="sub-files/css/grid/6cols.css">
+		<link rel="stylesheet" type="text/css" href="sub-files/css/grid/7cols.css">
+		<link rel="stylesheet" type="text/css" href="sub-files/css/grid/8cols.css">
+		<link rel="stylesheet" type="text/css" href="sub-files/css/grid/9cols.css">
+		<link rel="stylesheet" type="text/css" href="sub-files/css/grid/10cols.css">
+		<link rel="stylesheet" type="text/css" href="sub-files/css/grid/11cols.css">
+		<link rel="stylesheet" type="text/css" href="sub-files/css/grid/12cols.css">
+		<link rel="stylesheet" type="text/css" href="sub-files/css/style.css">
+    </head>
+	<body>
+    <!-- ALERT -->
+	
+	<!-- <div class="alert alert-dismissable alert-warning">
+    <button type="button" class="close" data-dismiss="alert" style="color:black;">×</button>
+    <h4><b>Alert!</b></h4>
+    <p>This is a <i>test alert</i>. Nothing important. But here is a <u style="color:blue;background-color:transparent;"><a href="http://google.com" target="_blank" style="color:blue;background-color:transparent;">link to Google</a></u> in case you forgot.</p>
+	</div>
+	<!-- End ALERT -->
+	
+	<!-- Nav bar ===== Change bg color by adding [CLASS]-material-[COLOR] after the [CLASS] ==== Acceptable colors: http://tinyurl.com/materialcolors -->
+	<div class="navbar navbar-default">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html" class="transition">Fortune OS</a>
+    </div>
+    <div class="navbar-collapse collapse navbar-responsive-collapse">
+        <ul class="nav navbar-nav navbar-right">
+			<li><a href="index.html" class="transition">Home</a></li>
+			<li><a href="downloads" class="transition">Downloads</a></li>
+			<li class="dropdown">
+                <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Source<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="https://github.com/Fortune-OS" class="transition" target="_blank">GitHub</a></li>
+                    <li><a href="http://review.fortune-os.in/" class="transition" target="_blank">Gerrit</a></li>
+                </ul>
+            </li>
+            <li><a href="news" class="transition">News</a></li>
+            <li class="active"><a href="javascript:void(0)"><b>Tools</b></a></li>
+            <li><a href="team" class="transition">Team</a></li>
+        </ul>
+    </div>
+</div>
+<!-- end nav bar -->
+<h1 style="margin-left:10px;margin-right:10px;">404 ERROR: Page Not Found!</h1>
+<h4 style="margin-left:10px;margin-right:10px;">This page doesn't exist!<br><br>Return <a href="index.html" class="transition">Home</a></h4>
+
+	<!-- js -->
+        <script src="sub-files/js/bootstrap.min.js"></script>
+        <script>
+            (function(){
+
+                var $button = $("<div id='source-button' class='btn btn-primary btn-xs'>&lt; &gt;</div>").click(function(){
+                    var index =  $('.bs-component').index( $(this).parent() );
+                    $.get(window.location.href, function(data){
+                        var html = $(data).find('.bs-component').eq(index).html();
+                        html = cleanSource(html);
+                        $("#source-modal pre").text(html);
+                        $("#source-modal").modal();
+                    })
+
+                });
+
+                $('.bs-component [data-toggle="popover"]').popover();
+                $('.bs-component [data-toggle="tooltip"]').tooltip();
+
+                $(".bs-component").hover(function(){
+                    $(this).append($button);
+                    $button.show();
+                }, function(){
+                    $button.hide();
+                });
+
+                function cleanSource(html) {
+                    var lines = html.split(/\n/);
+
+                    lines.shift();
+                    lines.splice(-1, 1);
+
+                    var indentSize = lines[0].length - lines[0].trim().length,
+                        re = new RegExp(" {" + indentSize + "}");
+
+                    lines = lines.map(function(line){
+                        if (line.match(re)) {
+                            line = line.substring(indentSize);
+                        }
+
+                        return line;
+                    });
+
+                    lines = lines.join("\n");
+
+                    return lines;
+                }
+
+                $(".icons-material .icon").each(function() {
+                    $(this).after("<br><br><code>" + $(this).attr("class").replace("icon ", "") + "</code>");
+                });
+
+            })();
+
+        </script>
+        <script src="sub-files/js/ripples.min.js"></script>
+        <script src="sub-files/js/material.min.js"></script>
+        <script src="sub-files/js/snackbar.min.js"></script>
+
+
+        <script src="sub-files/js/jquery.nouislider.min.js"></script>
+        <script>
+            $(function() {
+                $.material.init();
+                $(".shor").noUiSlider({
+                    start: 40,
+                    connect: "lower",
+                    range: {
+                        min: 0,
+                        max: 100
+                    }
+                });
+
+                $(".svert").noUiSlider({
+                    orientation: "vertical",
+                    start: 40,
+                    connect: "lower",
+                    range: {
+                        min: 0,
+                        max: 100
+                    }
+                });
+            });
+        </script>
+	<!-- end js -->
+</body>
+</html>
