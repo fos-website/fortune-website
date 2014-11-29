@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta content="text/html; charset=utf-8" http-equiv="content-type">
-    <title>Fortune OS -- Tools</title>
+    <title>Fortune OS -- Downloads</title>
     <script src="../sub-files/js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript">
 		$(document).ready(function() {
@@ -26,8 +26,6 @@
     <link href="../sub-files/css/material-wfont.min.css" rel="stylesheet">
     <link href="../sub-files/css/snackbar.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="../sub-files/css/grid/col.css">
-    <link rel="stylesheet" type="text/css" href="css/8cols.css">
     <link rel="stylesheet" type="text/css" href="../sub-files/css/style.css">
   </head>
   <body id="body-style">
@@ -48,7 +46,7 @@
       <div class="navbar-collapse collapse navbar-responsive-collapse">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="../index.html" class="transition">Home</a></li>
-          <li><a href="../downloads" class="transition">Downloads</a></li>
+          <li class="active"><a href="#"><b>Downloads</b></a></li>
           <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Source</a>
             <ul class="dropdown-menu">
               <li><a href="https://github.com/Fortune-OS" class="transition" target="_blank">GitHub</a></li>
@@ -56,46 +54,20 @@
             </ul>
           </li>
           <li><a href="../news" class="transition">News</a></li>
-          <li class="active"><a href="#"><b>Tools</b></a></li>
+          <li><a href="../tools" class="transition">Tools</a></li>
           <li><a href="../team" class="transition">Team</a></li>
         </ul>
       </div>
     </div>
     <!-- end nav bar -->
     <!--Title-->
-    <h2 style=" text-align:center">Tools</h2>
+    <h2 style="text-align:center">Downloads</h2>
     <hr>
     <!--End Title-->
-    <div class="section group">
-      <!-- Column 1 -->
-      <div class="col span_1_of_8"> Column </div>
-      <!-- End Col 1 -->
-      <!-- Column 2 -->
-      <div class="col span_1_of_8"> Column </div>
-      <!-- End Col 2 -->
-      <!-- Column 3 -->
-      <div class="col span_1_of_8"> Column</div>
-      <!-- End Col 3 -->
-      <!-- Column 4 -->
-      <div class="col span_1_of_8"> Column</div>
-      <!-- End Col 4 -->
-      <!-- Column 5 -->
-      <div class="col span_1_of_8"> Column</div>
-      <!-- End Col 5 -->
-      <!-- Column 6 -->
-      <div class="col span_1_of_8"> Column</div>
-      <!-- End Col 6 -->
-      <!-- Column 7 -->
-      <div class="col span_1_of_8"> Column</div>
-      <!-- End Col 7 -->
-      <!-- Column 8 -->
-      <div class="col span_1_of_8"> Column</div>
-      <!-- End Col 8 --> </div>
+    <p>Downloads page. (single column for now)</p>
     <!-- begin footer -->
-    <footer style="font-size:xx-small;text-align:center;color:white;background-color:#4D4C4C;">
-      The responsive grid on this web page was created using the <u style="color:#AFB4FF;background-color:transparent;">
-        <a href="" style="color:#AFB4FF;background-color:transparent;">
-          Responsive Grid System</a>. </u></footer>
+    <!--<footer style="font-size:xx-small;text-align:center;color:white;background-color:#4D4C4C;">
+      The responsive grid on this web page was created using the <u style="color:#AFB4FF;background-color:transparent;">        <a href="" style="color:#AFB4FF;background-color:transparent;">          Responsive Grid System</a>. </u></footer>-->
     <!-- end footer -->
     <!-- js -->
     <script src="../sub-files/js/bootstrap.min.js"></script>

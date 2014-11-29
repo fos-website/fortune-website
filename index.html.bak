@@ -22,15 +22,27 @@
     <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
     <!--jQuery-->
     <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>    <![endif]-->
+    <link rel="stylesheet" href="css/freenbar.min.css">
     <!--Popup Alert-->
     <!--<script>
       $(document).ready(function(){			 alert("Notice: \nThe Fortune OS website is currently under construction. Please pardon our mess.");			});		</script>-->
     <!--end popup alert-->
   </head>
   <body class="index">
+    <!-- Freenbar's code -->
+    <div id="barwrap">
+      <div class="bar"> <span id="head-image"></span> <span id="text">The key
+          of success is being passionate about what you do and never give up, no
+          matter the circunstances ツ</span> <span id="otherimg"></span> <span
+          id="ok"><a href="#">✔</a></span> </div>
+    </div>
+    <!-- End Freenbar's code -->
     <!-- Header -->
-    <header id="header" class="alt">
-      <nav id="nav">
+    <header id="header" class="alt"> <br>
+      <br>
+      <nav style="top: 77px; left: 722px;" id="nav">
         <ul>
           <li class="current"><a href="index.html">Home</a></li>
           <li><a href="downloads/">Downloads</a></li>
@@ -100,9 +112,14 @@
         <link rel="icon" href="http://www.fortune-os.in/favicon.ico" type="image/icon">
       </article>
     </article>
+    <!-- Freenbar JS -->
+    <script defer="defer" src="js/freenbar.min.js"></script>
+    <!-- End Freenbar JS -->
     <footer id="footer">
-      <hr>Home page template created by <a style="color: #6600cc;" target="_blank"
-        href="http://html5up.net">HTML5 UP</a><br>
+      <hr>Home page template created by HTML5 UP<br>
+      Freenbar Notification system created by <a style="color: #6600cc;" target="_blank"
+        href="http://twitter.com/Jmlevick">@Jmlevick</a> (<a style="color: #6600cc;"
+        href="https://github.com/Jmlevick/coffeeware-license">LICENSE</a><span style="color: #330033;">)</span><br>
     </footer>
   </body>
 </html>

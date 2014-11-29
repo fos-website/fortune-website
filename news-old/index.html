@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fortune OS -- News</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/style.css" rel="stylesheet" media="screen">
+	<link href="color/default.css" rel="stylesheet" media="screen">
+	<script src="js/modernizr.custom.js"></script>
+	
+<style>
+section {
+    background-color: #373737;
+    background-image: url("img/black-angle.png");
+    background-attachment: fixed;
+}
+
+html {
+	background-color: #373737;
+    background-image: url("img/black-angle.png");
+    background-attachment: fixed;
+}
+
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;<span class="line">
+} 
+
+span.line {
+  display: inline-block;
+}
+</style>
+	
+      </head>
+  <body>
+	<div class="menu-area">
+			<div id="dl-menu" class="dl-menuwrapper">
+						<button class="dl-trigger">Open Menu</button>
+						<ul class="dl-menu">
+							<li>
+								<a href="../index.html">Home</a>
+							</li>
+							<li><a href="../downloads">Downloads</a></li>
+							<li>
+								<a href="#">Source</a>
+								<ul class="dl-submenu">
+									<li><a href="https://github.com/Fortune-OS" target="_blank">GitHub</a></li>
+									<li><a href="http://review.fortune-os.in">Gerrit</a></li>
+								</ul>
+							</li>
+							<li><a href="#"><strong>News</strong></a></li>
+							<li><a href="../tools/">Tools</a></li>
+							<li><a href="../team/">Team</a></li>
+							
+							<!-- Sub Menu Styling -->
+							<!--<li>
+								<a href="#">Sub Menu</a>
+								<ul class="dl-submenu">
+									<li><a href="#">Sub menu</a></li>
+									<li><a href="#">Sub menu</a></li>
+								</ul>
+							</li>-->
+							
+						</ul>
+					</div><!-- /dl-menuwrapper -->
+	</div>	
+	 
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.smooth-scroll.min.js"></script>
+	<script src="js/jquery.dlmenu.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/custom.js"></script>
+
+<section id="one">	
+		<script src="js/jquery.zrssfeed.min.js" type="text/javascript"></script>
+	<!--Popup Alert-->
+		<!--<script>
+		 $(document).ready(function(){
+			 alert("Testing popup alerts");
+			});
+		</script>-->
+		
+		<h1 style="color:white";>
+			<span class="line">Fortune OS</span>
+			<span class="line">News</span>
+		</h1>
+		<p> <br> </p>
+		<hr>
+		
+<script type="text/javascript">
+$(document).ready(function () {
+  $('#rss').rssfeed('http://feeds.feedburner.com/PostsOfFortuneOsRssFeed', {
+    snippet: true, header: false, linktarget: '_blank'
+  });
+});
+</script>
+	
+	<p> <br> </p><p> <br> </p>
+<div id="rss" style="color:white; text-align:left";></div>
+</section>
+  	
+</html>

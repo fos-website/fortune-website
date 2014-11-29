@@ -32,13 +32,8 @@
   </head>
   <body id="body-style">
     <!-- ALERT -->
-    <div class="alert alert-dismissable alert-warning"> <button type="button" class="close"
-        data-dismiss="alert" style="color:black;">×</button>
-      <h4><b>Notice:</b></h4>
-      <p>The Fortune OS website is currently cunder construction. Please pardon
-        the mess.</p>
-    </div>
-    <!-- End ALERT -->
+    <!-- <div class="alert alert-dismissable alert-warning">
+    <button type="button" class="close" data-dismiss="alert" style="color:black;">×</button>    <h4><b>Alert!</b></h4>    <p>This is a <i>test alert</i>. Nothing important. But here is a <u style="color:blue;background-color:transparent;"><a href="http://google.com" target="_blank" style="color:blue;background-color:transparent;">link to Google</a></u> in case you forgot.</p>	</div>	<!-- End ALERT -->
     <!-- Nav bar ===== Change bg color by adding [CLASS]-material-[COLOR] after the [CLASS] ==== Acceptable colors: http://tinyurl.com/materialcolors -->
     <div class="navbar navbar-default">
       <div class="navbar-header"> <button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -63,7 +58,7 @@
     </div>
     <!-- end nav bar -->
     <!--Title-->
-    <h2 style=" text-align:center">Tools</h2>
+    <h1 style="text-align:center">Tools</h1>
     <hr>
     <!--End Title-->
     <div class="section group">
