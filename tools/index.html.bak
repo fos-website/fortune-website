@@ -26,8 +26,7 @@
     <link href="../sub-files/css/material-wfont.min.css" rel="stylesheet">
     <link href="../sub-files/css/snackbar.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="../sub-files/css/grid/col.css">
-    <link rel="stylesheet" type="text/css" href="css/8cols.css">
+    <link rel="stylesheet" type="text/css" href="../sub-files/css/simplegrid.css">
     <link rel="stylesheet" type="text/css" href="../sub-files/css/style.css">
   </head>
   <body id="body-style">
@@ -66,10 +65,10 @@
     <h2 style=" text-align:center">Tools</h2>
     <hr>
     <!--End Title-->
-    <div class="section group">
+    <div class="grid">
       <!-- Column 1 -->
-      <div style="text-align: center;margin:7px;" class="col span_2_of_8">
-        <h4> <span style="font-weight: bold; text-decoration: underline;">Linux
+      <div class="col-1-4">
+        <h4 style="text-align: center;"> <span style="font-weight: bold; text-decoration: underline;">Linux
             Distros for Android Development</span></h4>
         <h4><span style="font-weight: bold; text-decoration: underline;"> </span>
         </h4>
@@ -93,7 +92,7 @@
       </div>
       <!-- End Col 1 -->
       <!-- Column 2 -->
-      <div class="col span_2_of_8" style="margin:7px;">
+      <div class="col-1-4">
         <h4 style="text-align: center;"><span style="text-decoration: underline;"><span
               style="font-weight: bold;">Android SDK</span></span></h4>
         <div style="text-align: justify;"><span style="text-decoration: underline;"><span
@@ -101,14 +100,14 @@
           you will not need to install the Android SDK. If you are using another
           distribution, click the button below to learn how to install the SDK.</div>
         <br>
-        <div style="text-align:center;"><a href="tuts/installsdk.html" class="btn btn-primary btn-sm transition"
+        <div style="text-align:center;"><a href="setupsdk" class="btn btn-primary btn-sm transition"
             style="padding: 10px 5px;">Install Android SDK</a></div>
         <br>
         <br>
       </div>
       <!-- End Col 2 -->
       <!-- Column 3 -->
-      <div class="col span_2_of_8" style="margin:7px;">
+      <div class="col-1-4">
         <h4 style="text-align: center;"><span style="text-decoration: underline;"><span
               style="font-weight: bold;">Column 3<br>
             </span></span></h4>
@@ -122,11 +121,10 @@
           quis elementum quam condimentum nec. Mauris pretium pretium tempus.
           Integer quis sapien scelerisque, sollicitudin massa eget, facilisis
           neque. In vel odio sit amet tellus ultricies interdum.</div>
-        <br>
       </div>
       <!-- End Col 3 -->
       <!-- Column 4 -->
-      <div class="col span_2_of_8" style="margin:7px;">
+      <div class="col-1-4">
         <h4 style="text-align: center;"><span style="text-decoration: underline;"><span
               style="font-weight: bold;">Column 4<br>
             </span></span></h4>
@@ -142,9 +140,9 @@
         </div>
       </div>
     </div>
-    <div class="section group">
+    <div class="grid">
       <!-- Column 5 -->
-      <div class="col span_2_of_8" style="margin:7px;">
+      <div class="col-1-4">
         <h4 style="text-align: center;"><span style="text-decoration: underline;"><span
               style="font-weight: bold;">Column 5<br>
             </span></span></h4>
@@ -162,7 +160,7 @@
       </div>
       <!-- End Col 5 -->
       <!-- Column 6 -->
-      <div class="col span_2_of_8" style="margin:7px;">
+      <div class="col-1-4">
         <h4 style="text-align: center;"><span style="text-decoration: underline;"><span
               style="font-weight: bold;">Column 6<br>
             </span></span></h4>
@@ -179,7 +177,7 @@
       </div>
       <!-- End Col 6 -->
       <!-- Column 7 -->
-      <div class="col span_2_of_8" style="margin:7px;">
+      <div class="col-1-4">
         <h4 style="text-align: center;"><span style="text-decoration: underline;"><span
               style="font-weight: bold;">Column 7<br>
             </span></span></h4>
@@ -197,7 +195,7 @@
       </div>
       <!-- End Col 7 -->
       <!-- Column 8 -->
-      <div class="col span_2_of_8" style="margin:7px;">
+      <div class="col-1-4">
         <h4 style="text-align: center;"><span style="text-decoration: underline;"><span
               style="font-weight: bold;">Column 8<br>
             </span></span></h4>
@@ -217,12 +215,6 @@
       <br>
       <br>
     </p>
-    <!-- begin footer -->
-    <footer style="font-size:xx-small;text-align:center;color:white;background-color:#4D4C4C;">
-      The responsive grid on this web page was created using the <u style="color:#AFB4FF;background-color:transparent;">
-        <a href="http://www.responsivegridsystem.com/" style="color:#AFB4FF;background-color:transparent;">
-          Responsive Grid System</a>. </u></footer>
-    <!-- end footer -->
     <!-- js -->
     <script src="../sub-files/js/bootstrap.min.js"></script>
     <script>

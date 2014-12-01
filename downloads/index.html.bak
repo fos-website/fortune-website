@@ -33,7 +33,7 @@
     <div class="alert alert-dismissable alert-warning"> <button type="button" class="close"
         data-dismiss="alert" style="color:black;">×</button>
       <h4><b>Notice:</b></h4>
-      <p>The Fortune OS website is currently under construction. Please pardon
+      <p>The Fortune OS website is currently cunder construction. Please pardon
         the mess.</p>
     </div>
     <!-- End ALERT -->
