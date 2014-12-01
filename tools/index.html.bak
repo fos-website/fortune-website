@@ -32,8 +32,13 @@
   </head>
   <body id="body-style">
     <!-- ALERT -->
-    <!-- <div class="alert alert-dismissable alert-warning">
-    <button type="button" class="close" data-dismiss="alert" style="color:black;">×</button>    <h4><b>Alert!</b></h4>    <p>This is a <i>test alert</i>. Nothing important. But here is a <u style="color:blue;background-color:transparent;"><a href="http://google.com" target="_blank" style="color:blue;background-color:transparent;">link to Google</a></u> in case you forgot.</p>	</div>	<!-- End ALERT -->
+    <div class="alert alert-dismissable alert-warning"> <button type="button" class="close"
+        data-dismiss="alert" style="color:black;">×</button>
+      <h4><b>Notice:</b></h4>
+      <p>The Fortune OS website is currently cunder construction. Please pardon
+        the mess (and Lorem ipsum)</p>
+    </div>
+    <!-- End ALERT -->
     <!-- Nav bar ===== Change bg color by adding [CLASS]-material-[COLOR] after the [CLASS] ==== Acceptable colors: http://tinyurl.com/materialcolors -->
     <div class="navbar navbar-default">
       <div class="navbar-header"> <button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -58,38 +63,164 @@
     </div>
     <!-- end nav bar -->
     <!--Title-->
-    <h1 style="text-align:center">Tools</h1>
+    <h2 style=" text-align:center">Tools</h2>
     <hr>
     <!--End Title-->
     <div class="section group">
       <!-- Column 1 -->
-      <div class="col span_1_of_8"> Column </div>
+      <div style="text-align: center;margin:7px;" class="col span_2_of_8">
+        <h4> <span style="font-weight: bold; text-decoration: underline;">Linux
+            Distros for Android Development</span></h4>
+        <h4><span style="font-weight: bold; text-decoration: underline;"> </span>
+        </h4>
+        <div style="text-align: center;">
+          <div style="text-align: justify;">You will need a Linux distribution
+            to compile android ROMs, whether it is Fortune OS, or any other ROM.
+            Below you will find some Linux distributions that we recommend for
+            compiling Android from source:</div>
+          <div style="text-align:center;"><a target="_blank" href="http://bbqlinux.org/"
+              class="btn btn-primary btn-sm transition" style="padding: 10px 5px;margin-left:3px;margin-right:3px;">&nbsp;
+              &nbsp; BBQLinux &nbsp; &nbsp;</a><a target="_blank" href="http://www.ubuntu.com"
+              class="btn btn-primary btn-sm transition" style="padding: 10px 5px;margin-left:3px;margin-right:3px;">
+              &nbsp; &nbsp; &nbsp; Ubuntu &nbsp;&nbsp; &nbsp;</a><a target="_blank"
+              href="http://www.debian.org" class="btn btn-primary btn-sm transition"
+              style="padding: 10px 5px;margin-left:3px;margin-right:3px;">&nbsp;
+              &nbsp; &nbsp;&nbsp;Debian&nbsp; &nbsp; &nbsp; &nbsp;</a><a target="_blank"
+              href="http://lxle.net" class="btn btn-primary btn-sm transition" style="padding: 10px 5px;margin-left:3px;margin-right:3px;">&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LXLE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;</a></div>
+        </div>
+      </div>
       <!-- End Col 1 -->
       <!-- Column 2 -->
-      <div class="col span_1_of_8"> Column </div>
+      <div class="col span_2_of_8" style="margin:7px;">
+        <h4 style="text-align: center;"><span style="text-decoration: underline;"><span
+              style="font-weight: bold;">Android SDK</span></span></h4>
+        <div style="text-align: justify;"><span style="text-decoration: underline;"><span
+              style="font-weight: bold;"></span></span>If you chose BBQLinux,
+          you will not need to install the Android SDK. If you are using another
+          distribution, click the button below to learn how to install the SDK.</div>
+        <br>
+        <div style="text-align:center;"><a href="tuts/installsdk.html" class="btn btn-primary btn-sm transition"
+            style="padding: 10px 5px;">Install Android SDK</a></div>
+        <br>
+        <br>
+      </div>
       <!-- End Col 2 -->
       <!-- Column 3 -->
-      <div class="col span_1_of_8"> Column</div>
+      <div class="col span_2_of_8" style="margin:7px;">
+        <h4 style="text-align: center;"><span style="text-decoration: underline;"><span
+              style="font-weight: bold;">Column 3<br>
+            </span></span></h4>
+        <div style="text-align: justify;"><span style="text-decoration: underline;"><span
+              style="font-weight: bold;"></span></span>Lorem ipsum dolor sit
+          amet, consectetur adipiscing elit. Proin a convallis nisl. Sed purus
+          dolor, mollis nec eros eu, aliquet consectetur nunc. Vestibulum
+          eleifend vel ligula et commodo. Sed porta risus faucibus quam tempus
+          elementum. Integer vel lectus purus. Suspendisse placerat mollis erat,
+          eleifend feugiat ligula vehicula at. Donec congue malesuada purus,
+          quis elementum quam condimentum nec. Mauris pretium pretium tempus.
+          Integer quis sapien scelerisque, sollicitudin massa eget, facilisis
+          neque. In vel odio sit amet tellus ultricies interdum.</div>
+        <br>
+      </div>
       <!-- End Col 3 -->
       <!-- Column 4 -->
-      <div class="col span_1_of_8"> Column</div>
-      <!-- End Col 4 -->
+      <div class="col span_2_of_8" style="margin:7px;">
+        <h4 style="text-align: center;"><span style="text-decoration: underline;"><span
+              style="font-weight: bold;">Column 4<br>
+            </span></span></h4>
+        <div style="text-align: justify;"><span style="text-decoration: underline;"><span
+              style="font-weight: bold;"></span></span>Lorem ipsum dolor sit
+          amet, consectetur adipiscing elit. Integer sit amet mi ullamcorper,
+          ultricies massa sed, aliquet arcu. Quisque consectetur elementum eros,
+          bibendum accumsan justo commodo sed. Morbi nisl massa, pellentesque
+          lacinia lacinia sed, consequat in magna. Sed at risus ut turpis
+          imperdiet ultricies. Mauris posuere vulputate justo. Sed egestas
+          cursus est a hendrerit. Etiam aliquam non lectus id dignissim. Etiam
+          ultricies blandit massa quis pellentesque. <br>
+        </div>
+      </div>
+    </div>
+    <div class="section group">
       <!-- Column 5 -->
-      <div class="col span_1_of_8"> Column</div>
+      <div class="col span_2_of_8" style="margin:7px;">
+        <h4 style="text-align: center;"><span style="text-decoration: underline;"><span
+              style="font-weight: bold;">Column 5<br>
+            </span></span></h4>
+        <div style="text-align: justify;"><span style="text-decoration: underline;"><span
+              style="font-weight: bold;"></span></span>Lorem ipsum dolor sit
+          amet, consectetur adipiscing elit. Etiam viverra rutrum sapien, sit
+          amet ultricies purus ultricies finibus. Cum sociis natoque penatibus
+          et magnis dis parturient montes, nascetur ridiculus mus. Interdum et
+          malesuada fames ac ante ipsum primis in faucibus. Nulla in varius
+          elit. Vivamus urna sem, dignissim id massa condimentum, auctor
+          facilisis risus. Vivamus ornare lectus sit amet lorem congue
+          hendrerit. Phasellus blandit, ligula sit amet vestibulum sodales, diam
+          sapien mattis mauris, a condimentum tortor sapien et magna.</div>
+        <br>
+      </div>
       <!-- End Col 5 -->
       <!-- Column 6 -->
-      <div class="col span_1_of_8"> Column</div>
+      <div class="col span_2_of_8" style="margin:7px;">
+        <h4 style="text-align: center;"><span style="text-decoration: underline;"><span
+              style="font-weight: bold;">Column 6<br>
+            </span></span></h4>
+        <div style="text-align: justify;"><span style="text-decoration: underline;"><span
+              style="font-weight: bold;"></span></span>Lorem ipsum dolor sit
+          amet, consectetur adipiscing elit. Cras pharetra egestas mauris, in
+          dapibus dolor. Donec quis ipsum et ante posuere tincidunt. Integer
+          mollis egestas orci, vitae cursus risus venenatis non. In porta porta
+          tincidunt. Morbi lorem est, lacinia quis diam at, tristique ultricies
+          risus. Mauris ornare luctus luctus. Vivamus interdum quam vitae lectus
+          pellentesque tristique. Maecenas bibendum bibendum pulvinar. Nam
+          auctor tincidunt ante eu accumsan.<br>
+        </div>
+      </div>
       <!-- End Col 6 -->
       <!-- Column 7 -->
-      <div class="col span_1_of_8"> Column</div>
+      <div class="col span_2_of_8" style="margin:7px;">
+        <h4 style="text-align: center;"><span style="text-decoration: underline;"><span
+              style="font-weight: bold;">Column 7<br>
+            </span></span></h4>
+        <div style="text-align: justify;"><span style="text-decoration: underline;"><span
+              style="font-weight: bold;"></span></span>Lorem ipsum dolor sit
+          amet, consectetur adipiscing elit. Integer sit amet arcu maximus,
+          facilisis justo et, sodales urna. Proin in erat et lectus consequat
+          posuere pellentesque et arcu. Vestibulum porta ante eu sapien placerat
+          congue. Sed suscipit ligula velit, id accumsan purus scelerisque quis.
+          Ut ultricies leo et gravida viverra. Mauris purus risus, lacinia in
+          vulputate et, auctor non sapien. Aliquam tincidunt augue pretium nunc
+          aliquam, in ornare leo aliquet. Morbi vel dictum est, eget faucibus
+          erat. </div>
+        <br>
+      </div>
       <!-- End Col 7 -->
       <!-- Column 8 -->
-      <div class="col span_1_of_8"> Column</div>
+      <div class="col span_2_of_8" style="margin:7px;">
+        <h4 style="text-align: center;"><span style="text-decoration: underline;"><span
+              style="font-weight: bold;">Column 8<br>
+            </span></span></h4>
+        <div style="text-align: justify;"><span style="text-decoration: underline;"><span
+              style="font-weight: bold;"></span></span>Lorem ipsum dolor sit
+          amet, consectetur adipiscing elit. Aliquam rhoncus odio nec arcu
+          egestas, ac scelerisque nisi ornare. Cras pharetra nisi eu lobortis
+          vestibulum. Morbi congue purus a semper ullamcorper. Quisque id
+          pretium est. Duis a dui ut nibh fringilla euismod in id nulla. Donec
+          mi augue, viverra in augue tincidunt, pulvinar rutrum lectus. In
+          placerat, lacus non congue aliquet, nulla dui dictum arcu, eu pharetra
+          nulla libero iaculis est. Morbi porttitor risus id faucibus finibus.<br>
+        </div>
+      </div>
       <!-- End Col 8 --> </div>
+    <p><br>
+      <br>
+      <br>
+    </p>
     <!-- begin footer -->
     <footer style="font-size:xx-small;text-align:center;color:white;background-color:#4D4C4C;">
       The responsive grid on this web page was created using the <u style="color:#AFB4FF;background-color:transparent;">
-        <a href="" style="color:#AFB4FF;background-color:transparent;">
+        <a href="http://www.responsivegridsystem.com/" style="color:#AFB4FF;background-color:transparent;">
           Responsive Grid System</a>. </u></footer>
     <!-- end footer -->
     <!-- js -->
